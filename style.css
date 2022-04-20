@@ -1,0 +1,153 @@
+body {
+	background: rgb(2,0,36);
+    background: #182C61; 
+}
+
+.parent {
+	background: #130f40;
+	height: 250px;
+	width: 250px;
+	perspective: 1000px;
+	overflow: hidden;
+	position: relative;
+	top: 29%;
+	left: 12%;
+	border: 20px groove #cd6133;
+	background: url(images/night-sky.jpg) no-repeat center center / cover ;
+}
+
+.one {
+	width: 124px;
+	height: 247px;
+	background: #4834d4;
+	position: absolute;
+	left: 40%;
+	top: 39%;
+	margin: -98px -101px 0;
+	transition: 1s;
+	transform-origin: left bottom;
+	z-index: 1;
+}
+
+.two {
+	width: 124px;
+	height: 247px;
+	background: #4834d4;
+	position: absolute;
+	left: 49%;
+	top: 39%;
+	margin: -98px 0 0;
+	transition: 1s;
+	transform-origin: right bottom;
+	z-index: 1;
+}
+
+
+
+.parent:hover .one {
+	transform: rotatey(100deg);
+}
+
+.parent:hover .two  {
+	transform: rotatey(-100deg);
+}
+
+.parent:hover .moon {
+	position: absolute;
+	top: 18px;
+	perspective-origin: bottom;
+}
+
+.moon {
+	background: rgb(182,176,178);
+	background: radial-gradient(circle, rgba(182,176,178,1) 0%, rgba(229,227,229,1) 100%); 
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	transition: 1s;
+	position: absolute;
+	top: 253px;
+	left: 74px;
+	
+}
+
+
+.parent-2 {
+	background: #130f40;
+	height: 250px;
+	width: 250px;
+	position: relative;
+	perspective: 1000px;
+	overflow: hidden;
+	top: 60%;
+	left: 59%;
+	border: 20px groove #cd6133;
+	background: url(images/sky.jpg) no-repeat center center / cover;
+}
+
+.parent-2 .one {
+	width: 124px;
+	height: 250px;
+	background: #4834d4;
+	position: absolute;
+	left: 40%;
+	top: 39%;
+	margin: -98px -101px 0;
+	transition: 1s;
+	transform-origin: left bottom;
+	z-index: 1;
+}
+
+.parent-2 .two {
+	width: 124px;
+	height: 248px;
+	background: #4834d4;
+	position: absolute;
+	left: 49%;
+	top: 39%;
+	margin: -98px 0 0;
+	transition: 1s;
+	transform-origin: right bottom;
+	z-index: 1;
+}
+
+
+.parent-2:hover .one {
+	transform: rotatey(113deg);
+}
+
+.parent-2:hover .two  {
+	transform: rotatey(-112deg);
+
+}
+
+.parent-2:hover .sun {
+	position: absolute;
+	perspective-origin: bottom;
+	top: 18px;
+}
+
+.parent-2 .sun {
+	background: rgb(243,251,63);
+	background: radial-gradient(circle, rgba(243,251,63,1) 0%, rgba(252,70,70,1) 100%); 
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	transition: 1s;
+	position: absolute;
+	top: 253px;
+	left: 74px;
+	
+}
+
+.moon-parent, 
+.sun-parent {
+	height: 220px;
+	position: relative;
+	width: 250px;
+	overflow: hidden;
+}
+
+.one, .two {
+	border: 2px solid #6D214F;
+}
